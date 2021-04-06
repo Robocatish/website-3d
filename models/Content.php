@@ -16,7 +16,7 @@ class Content
         $stmt=$this->pdo->query("SELECT * FROM contents ORDER BY created_at DESC");
         return $stmt->fetchAll();
     }
-    public function getOnePost()
+    public function getOneContent($id)
     {
 
     }
