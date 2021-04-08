@@ -40,4 +40,9 @@ class Auth
         ]);
         return $this->pdo->lastInsertId();
     }
+
+    public function find($id)
+    {
+
+    }
 }
