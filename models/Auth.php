@@ -43,6 +43,10 @@ class Auth
 
     public function find($id)
     {
-
+        $stmt = $this->pdo->prepare("SELECT * FROM users WHERE id=:id");
+        $stmt->execute([
+            'id'=>$id
+        ]);
+        return $stmt->fetch();
     }
 }

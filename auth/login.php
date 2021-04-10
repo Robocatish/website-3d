@@ -10,7 +10,7 @@ if(isset($_POST['submit']))
     if($user){
         $_SESSION['user'] = json_encode($user,JSON_UNESCAPED_UNICODE);
         $_SESSION['auth'] = true;
-        if($user['role']='admin'){
+        if($user->role=='admin'){
             header('Location: /admin');
         }else{
             header('Location: /');

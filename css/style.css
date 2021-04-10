@@ -57,7 +57,7 @@ body{
     border-radius: 10px;
 }
 .enterInAccount{
-    width:100px;
+    width:auto;
     height: 30px;
     background-color: dodgerblue;
     border: 1px solid white;
@@ -67,4 +67,20 @@ body{
 }
 .enterInAccount:focus{
     outline:none;
+}
+/*админ панель*/
+.adminPanel{
+    width: 100%;
+    height: 50px;
+    border-top: 5px solid dodgerblue;
+    background-color: black;
+    align-items: center;
+    display: flex;
+}
+.menuPoint{
+    margin-left:20px ;
+    font-weight: bold;
+    font-family: Arial;
+    color: white;
+    text-decoration: none;
 }

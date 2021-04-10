@@ -20,4 +20,8 @@ class Content
     {
 
     }
+    public function insertContent($data)
+    {
+        $stmt = $this->pdo->prepare("INSERT INTO contents()")
+    }
 }

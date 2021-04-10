@@ -13,7 +13,7 @@
     <div class="sub-header">
         <a class="account" href="#"
            style="display: <?= $user ? 'inline': 'none'?>">
-            <?=$user ? $user->name: '' ?></a>
+            <?=$user ? $user->nickname: '' ?></a>
         <a href="/register" class="account"
            style="display: <?=$user ? 'none':'inline'?>"> Регистрация</a>
         <a href="/auth" class="account">
