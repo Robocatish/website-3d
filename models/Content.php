@@ -31,7 +31,7 @@ class Content
     public function insertContent($data)
     {
         $stmt=$this->pdo->prepare("INSERT INTO contents(title,text,created_at,type,program_id,user_id,file) 
-                                        VALUE (:title,:text,:create_at,:type,:program_id,:user_id,:file)");
+                                        VALUES (:title,:text,:create_at,:type,:program_id,:user_id,:file)");
         $stmt->execute([
             'title'=>$data['title'],
             'text'=>$data['text'],
@@ -46,11 +46,16 @@ class Content
     public function insertImages($data)
     {
         $stmt=$this->pdo->prepare("INSERT INTO images(image,contents_id)
-                                         VALUE (:image,:contents_id)");
+                                         VALUES (:image,:contents_id)");
         $stmt->execute([
             'image'=>$data['image'],
             'contents_id'=>$data['contents_id'],
         ]);
         return $this->pdo->lastInsertId();
+    }
+    public function getAllDevEnv()
+    {
+        $stmt=$this->pdo->query("SELECT * FROM dev_environments ORDER BY id ASC");
+        return $stmt->fetchAll();
     }
 }
