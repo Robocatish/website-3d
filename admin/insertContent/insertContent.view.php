@@ -29,6 +29,10 @@ include $_SERVER['DOCUMENT_ROOT']. '/templates/nav.php'; ?>
             <label for="file">файл (документ/архив с плагином)</label>
             <input type="file" name="file" id="file">
         </div>
+        <div>
+            <label for="image">изображения</label>
+            <input type="file" name="image" id="image">
+        </div>
         <button type="submit" name="submit">
             Добавить
         </button>
