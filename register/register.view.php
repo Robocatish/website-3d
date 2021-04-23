@@ -1,4 +1,5 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/header.php';?>
+<?php include $_SERVER["DOCUMENT_ROOT"]. '/templates/navDefault.php';?>
 <br>
     <div class="auth">
         <h1>Регистрация</h1>

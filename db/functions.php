@@ -37,7 +37,7 @@ function deleteImg($file){
     }
 }
 
-function loadFile($maxFileContentSize,$uploadPathContent,$nameElem){
+function loadFile($maxFileContentSize,$validFileContentTypes,$uploadPathContent,$nameElem){
     $error="";
     $newName="";
     if (isset($_FILES[$nameElem])){
@@ -52,6 +52,13 @@ function loadFile($maxFileContentSize,$uploadPathContent,$nameElem){
             $name = pathinfo($file['name'],PATHINFO_FILENAME). '_'. time();
             $ext = pathinfo($file['name'],PATHINFO_EXTENSION);
             $newName="$name.$ext";
+            if (in_array($type, $validFileContentTypes)) {
+                if (!move_uploaded_file($file['tmp_name'], $uploadPathContent . $newName)) {
+                    $error = "не удалось загрузить файл...";
+                }
+            } else {
+                $error = "расширение файла должно быть doc или rar...";
+            }
         };
         if (!empty($error)) {
             $error = $file['name'] . '-' . $error;
