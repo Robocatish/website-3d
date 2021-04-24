@@ -31,7 +31,7 @@ class Content
     public function insertContent($data)
     {
         $stmt=$this->pdo->prepare("INSERT INTO contents(title,text,created_at,type,program_id,user_id,file) 
-                                        VALUES (:title,:text,:create_at,:type,:program_id,:user_id,:file)");
+                                        VALUES (:title,:text,:created_at,:type,:program_id,:user_id,:file)");
         $stmt->execute([
             'title'=>$data['title'],
             'text'=>$data['text'],
