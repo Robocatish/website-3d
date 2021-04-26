@@ -12,7 +12,7 @@ include $_SERVER['DOCUMENT_ROOT']. "/templates/nav.php";?>
 
         <?php foreach ($contents as $content):?>
         <tr>
-            <td><a href="/admin/viewContent/oneContent.view.php?id=<?=$content->id?>"><?=$content->title?></a></td>
+            <td><a href="/admin/viewContent/oneContent.php?id=<?=$content->id?>"><?=$content->title?></a></td>
             <td><?=$content->text?></td>
             <td><?=$content->nickname?></td>
             <td><?=$content->created_at?></td>

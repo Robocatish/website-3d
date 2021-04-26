@@ -10,7 +10,16 @@
 </head>
 <body>
 <div class="header">
+    <div class="logotype">
+        <a href="/index.php">
+            <img src="/logo/logo.png" alt="Polygon" width="50px">
+            <p class="nameOfSite">polygon</p>
+        </a>
+    </div>
     <div class="sub-header">
+        <a class="account" href="/admin" style="display: <?= $user->role=="admin" ? 'inline':'none'?>">
+            Перейти в админ-панель
+        </a>
         <a class="account" href="#"
            style="display: <?= $user ? 'inline': 'none'?>">
             <?=$user ? $user->nickname: '' ?></a>

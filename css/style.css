@@ -3,6 +3,22 @@ body{
     padding: 0;
     background-color: #1A1A1A;
 }
+
+/*логотип*/
+@font-face {
+    font-family:'PonterPC';
+    src: url(/logo/font/20136.ttf);
+}
+.logotype>a{
+    display: flex;
+    text-decoration: none;
+}
+.nameOfSite{
+    color: white;
+    font-family: PonterPC;
+    font-size: 1.5em;
+    margin: 10px;
+}
 /*стили для хедера*/
 .header{
     width: 100%;
@@ -100,5 +116,12 @@ label{
 th,td{
     border: 2px solid white;
     padding: 10px;
+    font-family: Arial;
+}
+
+/*визуальное отображение контента*/
+.visualContent{
+    padding-left: 20px;
+    color: white;
     font-family: Arial;
 }

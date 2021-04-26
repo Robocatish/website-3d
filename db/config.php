@@ -15,5 +15,5 @@ $validFileTypes = ['image/jpg','image/jpeg','image/png'];
 $uploadPath = $_SERVER['DOCUMENT_ROOT'] .'/img/';
 
 $maxFileContentSize = 500*1024*1024;
-$validFileContentTypes = ['application/x-rar-compressed','application/msword'];
+$validFileContentTypes = ['application/x-rar-compressed','application/msword','application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
 $uploadPathContent = $_SERVER['DOCUMENT_ROOT']. '/files/';

@@ -64,6 +64,14 @@ class Content
         return $this->pdo->lastInsertId();
     }
 
+    public function deletePost($id)
+    {
+         $stmt=$this->pdo->prepare("DELETE FROM contents WHERE id=:id");
+         $stmt->execute([
+             'id'=> $id
+         ]);
+    }
+
     public function getAllDevEnv()
     {
         $stmt=$this->pdo->query("SELECT * FROM dev_environments ORDER BY id ASC");
