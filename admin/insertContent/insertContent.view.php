@@ -1,5 +1,5 @@
-<?php include $_SERVER["DOCUMENT_ROOT"]. '/templates/header.php';
-include $_SERVER['DOCUMENT_ROOT']. '/templates/nav.php'; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"] . '/templates/header.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/templates/nav.php'; ?>
 <div class="auth">
     <form action="insertContent.php" method="post" enctype="multipart/form-data">
         <div>
@@ -20,20 +20,20 @@ include $_SERVER['DOCUMENT_ROOT']. '/templates/nav.php'; ?>
         <div>
             <label for="DevEnv">рабочая среда</label>
             <select name="program_id" id="program_id">
-                <?php foreach ($DevEnvs as $devEnv):?>
-                <option value="<?=$devEnv->id?>"><?=$devEnv->dev_environment?></option>
+                <?php foreach ($DevEnvs as $devEnv): ?>
+                    <option value="<?= $devEnv->id ?>"><?= $devEnv->dev_environment ?></option>
                 <?php endforeach; ?>
             </select>
         </div>
-        <div>
-            <label for="file">файл (документ/архив с плагином)</label>
-            <input type="file" name="file" id="file">
-        </div>
+                <div>
+                    <label for="file">файл (документ/архив с плагином)</label>
+                    <input type="file" name="file" id="file" multiple>
+                </div>
         <div>
             <label for="image">изображения</label>
-            <input type="file" name="image" id="image">
+            <input type="file" name="image[]" id="image" multiple>
         </div>
-        <button type="submit" name="submit">
+        <button type="submit" name="submit" value="ok">
             Добавить
         </button>
     </form>

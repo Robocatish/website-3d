@@ -37,6 +37,49 @@ function deleteImg($file){
     }
 }
 
+function loadSomeImage($maxFileSize,$validFileTypes,$uploadPath,$nameElem):array
+{
+    $files=$_FILES[$nameElem];
+    $countFiles = count($_FILES[$nameElem]['error']);
+    $error="";
+    $errors=[];
+    $fileNames=[];
+    for ($k=0; $k<$countFiles;$k++)
+    {
+        $name=pathinfo($files["name"][$k], PATHINFO_FILENAME). '_' .time();
+        $type=pathinfo($files["name"][$k],PATHINFO_EXTENSION);
+
+        $file = "$name.$type";
+
+        if($files["size"][$k]>$maxFileSize){
+            $error="Размер файла не должен превышать {$maxFileSize} МБайт.";
+        }elseif (!empty($files["error"][$k])){
+            $error="Ошибка загрузки файла";
+        }else{
+            $type=mime_content_type($files["tmp_name"][$k]);
+            $fileName=$uploadPath . $file;
+
+            if (in_array($type,$validFileTypes)){
+                if (!move_uploaded_file($files["tmp_name"][$k],$fileName)){
+                    $error="не удалось загрузить картинку";
+                }
+            }else{
+                $error="Расширение должно быть png,jpg, jpeg";
+            }
+        }
+        if (!empty($error)){
+            $error="{$files["name"][$k]} - {$error}";
+            $errors[]=$error;
+        }else{
+            $fileNames[]=$file;
+        }
+    }
+    return[$errors,$fileNames];
+}
+
+
+
+
 function loadFile($maxFileContentSize,$validFileContentTypes,$uploadPathContent,$nameElem){
     $error="";
     $newName="";

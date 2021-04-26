@@ -43,16 +43,21 @@ class Content
         ]);
         return $this->pdo->lastInsertId();
     }
-    public function insertImages($data)
+    public function insertImages($images,$id)
     {
-        $stmt=$this->pdo->prepare("INSERT INTO images(image,contents_id)
+        $stmt = $this->pdo->prepare("INSERT INTO images(image,contents_id)
                                          VALUES (:image,:contents_id)");
-        $stmt->execute([
-            'image'=>$data['image'],
-            'contents_id'=>$data['contents_id'],
-        ]);
+        if (!empty($images)) {
+            foreach ($images as $img) {
+                $stmt->execute([
+                    'image' => $img,
+                    'contents_id' => $id,
+                ]);
+            }
+        }
         return $this->pdo->lastInsertId();
     }
+
     public function getAllDevEnv()
     {
         $stmt=$this->pdo->query("SELECT * FROM dev_environments ORDER BY id ASC");
