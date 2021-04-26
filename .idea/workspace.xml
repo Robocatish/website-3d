@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7734d814-f1f7-440d-8647-3a677be22c66" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/insertContent/insertContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/insertContent/insertContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/insertContent/insertContent.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/insertContent/insertContent.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/db/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Задачи 4 - слайдеры_1619253567.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/Задачи 4 - слайдеры_1619253616.doc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Content.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nav.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -46,7 +41,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619238992378</updated>
       <workItem from="1619238998928" duration="11875000" />
-      <workItem from="1619408940672" duration="11089000" />
+      <workItem from="1619408940672" duration="16479000" />
     </task>
     <servers />
   </component>

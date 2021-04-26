@@ -13,12 +13,18 @@ class Content
 
     public function getAllContents()
     {
-        $stmt=$this->pdo->query("SELECT * FROM contents ORDER BY created_at DESC");
+        $stmt=$this->pdo->query("SELECT contents.*,users.nickname FROM contents
+                                        INNER JOIN users ON contents.user_id=users.id
+                                        ORDER BY created_at DESC");
         return $stmt->fetchAll();
     }
     public function getOneContent($id)
     {
-
+        $stmt=$this->pdo->prepare("SELECT * FROM contents WHERE id = :id");
+        $stmt->execute([
+            'id'=>$id
+        ]);
+        return $stmt->fetch();
     }
     public function insertDevEnv($data)
     {
