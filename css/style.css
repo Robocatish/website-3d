@@ -125,3 +125,27 @@ th,td{
     color: white;
     font-family: Arial;
 }
+.deleteBtn{
+    padding:10px;
+    color: white;
+    background-color: darkred;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: Arial;
+}
+.editBtn{
+    padding: 10px;
+    color: white;
+    background-color: darkgreen;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: Arial;
+}
+/*визуальное отображение страницы пользователя*/
+.userPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial;
+}

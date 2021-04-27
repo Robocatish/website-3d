@@ -20,7 +20,7 @@
         <a class="account" href="/admin" style="display: <?= $user->role=="admin" ? 'inline':'none'?>">
             Перейти в админ-панель
         </a>
-        <a class="account" href="#"
+        <a class="account" href="/user"
            style="display: <?= $user ? 'inline': 'none'?>">
             <?=$user ? $user->nickname: '' ?></a>
         <a href="/register" class="account"

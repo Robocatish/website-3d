@@ -2,10 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7734d814-f1f7-440d-8647-3a677be22c66" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/viewContent/deleteContent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/viewContent/editContent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/viewContent/editContent.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/viewContent/updateContent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/user.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/user.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7903a204-05d6-4f06-a70b-1b6c8d49ccf9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7903a204-05d6-4f06-a70b-1b6c8d49ccf9/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7903a204-05d6-4f06-a70b-1b6c8d49ccf9/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7903a204-05d6-4f06-a70b-1b6c8d49ccf9/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/insertContent/insertContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/insertContent/insertContent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/insertContent/insertContent.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/insertContent/insertContent.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/insertDevEnv/insertDevEnv.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/insertDevEnv/insertDevEnv.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/viewContent/oneContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/viewContent/oneContent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/viewContent/oneContent.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/viewContent/oneContent.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/db/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/задание_1619441259.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Coca-Cola_1619441259.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Sprite_1619441259.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/fanta_1619441259.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/pepsi_1619441259.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Content.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Content.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +39,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1rbJj0XRMYIE6cV5tk8Q6BZzYCh" />
   <component name="ProjectViewState">
@@ -41,7 +71,8 @@
       <option name="presentableId" value="Default" />
       <updated>1619238992378</updated>
       <workItem from="1619238998928" duration="11875000" />
-      <workItem from="1619408940672" duration="16479000" />
+      <workItem from="1619408940672" duration="17110000" />
+      <workItem from="1619494463001" duration="17620000" />
     </task>
     <servers />
   </component>
@@ -58,5 +89,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 <?php include $_SERVER["DOCUMENT_ROOT"] . '/templates/header.php';
 include $_SERVER['DOCUMENT_ROOT'] . '/templates/nav.php'; ?>
+<script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/classic/ckeditor.js"></script>
 <div class="auth">
     <form action="insertContent.php" method="post" enctype="multipart/form-data">
         <div>
@@ -8,7 +9,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/templates/nav.php'; ?>
         </div>
         <div>
             <label for="text">Текст/описание материала</label>
-            <textarea name="text" id="text" cols="30" rows="10"></textarea>
+            <textarea name="text" id="textarea" class="ck-editor__editable_inline"></textarea>
         </div>
         <div>
             <label for="type">тип материала</label>
@@ -38,3 +39,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/templates/nav.php'; ?>
         </button>
     </form>
 </div>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#textarea'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+<?php include $_SERVER['DOCUMENT_ROOT']. '/templates/footer.php';

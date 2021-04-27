@@ -49,6 +49,23 @@ class Content
         ]);
         return $this->pdo->lastInsertId();
     }
+
+    public function updateContent($data)
+    {
+        $stmt=$this->pdo->prepare("UPDATE contents SET title=:title,text=:text,created_at=:created_at,type=:type,
+                                            program_id=:program_id,user_id=:user_id,file=:file WHERE id=:id");
+        $stmt->execute([
+            'title'=>$data['title'],
+            'text'=>$data['text'],
+            'created_at'=>date('y-m-d'),
+            'type'=>$data['type'],
+            'program_id'=>$data['program_id'],
+            'user_id'=>$data['user_id'],
+            'file'=>$data['file'],
+            'id'=>$data['id']
+        ]);
+    }
+
     public function insertImages($images,$id)
     {
         $stmt = $this->pdo->prepare("INSERT INTO images(image,contents_id)
@@ -64,7 +81,7 @@ class Content
         return $this->pdo->lastInsertId();
     }
 
-    public function deletePost($id)
+    public function deleteContent($id)
     {
          $stmt=$this->pdo->prepare("DELETE FROM contents WHERE id=:id");
          $stmt->execute([
@@ -75,6 +92,14 @@ class Content
     public function getAllDevEnv()
     {
         $stmt=$this->pdo->query("SELECT * FROM dev_environments ORDER BY id ASC");
+        return $stmt->fetchAll();
+    }
+
+    public function getAllImagesFromContent($contents_id){
+        $stmt=$this->pdo->prepare("SELECT * FROM images WHERE contents_id=:contents_id");
+        $stmt->execute([
+            'contents_id'=>$contents_id
+        ]);
         return $stmt->fetchAll();
     }
 }

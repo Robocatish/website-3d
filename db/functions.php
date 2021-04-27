@@ -109,3 +109,22 @@ function loadFile($maxFileContentSize,$validFileContentTypes,$uploadPathContent,
     }
     return [$error, $newName];
 }
+
+function deleteSomeImage($files_Arr,$uploadPath):string
+{
+    $error = "";
+    if(!empty($files_Arr)) {
+        foreach ($files_Arr as $file) {
+            if (!unlink($uploadPath.$file->image)) {
+                $error .= " Ошибка удаления файла ";
+            }
+        }
+    }
+    return $error;
+}
+
+function deleteFile($file){
+    if (is_file($file)){
+        unlink($file);
+    }
+}
