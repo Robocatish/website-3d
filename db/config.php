@@ -10,10 +10,12 @@ const CONN = [
     ]
 ];
 
-$maxFileSize = 5*1024*1024;
+$maxFileSize = 20*1024*1024;
 $validFileTypes = ['image/jpg','image/jpeg','image/png'];
 $uploadPath = $_SERVER['DOCUMENT_ROOT'] .'/img/';
 
 $maxFileContentSize = 500*1024*1024;
 $validFileContentTypes = ['application/x-rar-compressed','application/msword','application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
 $uploadPathContent = $_SERVER['DOCUMENT_ROOT']. '/files/';
+
+$uploadPathGallery = $_SERVER['DOCUMENT_ROOT']. '/galleryImage/';

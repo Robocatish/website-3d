@@ -1,5 +1,5 @@
 <?php
-function loadImg($maxFileSize, $validFileTypes, $uploadPath, $nameElem){
+function loadImg($maxFileSize, $validFileTypes, $uploadPathGallery, $nameElem){
     $error="";
     $newName="";
     if (isset($_FILES[$nameElem])) {
@@ -16,7 +16,7 @@ function loadImg($maxFileSize, $validFileTypes, $uploadPath, $nameElem){
             $newName = "$name.$ext";
 
             if (in_array($type, $validFileTypes)) {
-                if (!move_uploaded_file($file['tmp_name'], $uploadPath . $newName)) {
+                if (!move_uploaded_file($file['tmp_name'], $uploadPathGallery . $newName)) {
                     $error = "не удалось загрузить изображение...";
                 }
             } else {

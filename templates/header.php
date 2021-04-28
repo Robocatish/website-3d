@@ -18,7 +18,7 @@
     </div>
     <div class="sub-header">
         <a class="account" href="/admin" style="display: <?= $user->role=="admin" ? 'inline':'none'?>">
-            Перейти в админ-панель
+            админ-панель
         </a>
         <a class="account" href="/user"
            style="display: <?= $user ? 'inline': 'none'?>">

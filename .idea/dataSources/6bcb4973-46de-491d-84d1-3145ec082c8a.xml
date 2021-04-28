@@ -909,8 +909,8 @@
     <table id="231" parent="3" name="comments"/>
     <table id="232" parent="3" name="contents"/>
     <table id="233" parent="3" name="dev_environments"/>
-    <table id="234" parent="3" name="images"/>
-    <table id="235" parent="3" name="rating"/>
+    <table id="234" parent="3" name="gallery"/>
+    <table id="235" parent="3" name="images"/>
     <table id="236" parent="3" name="users"/>
     <column id="237" parent="231" name="id">
       <Position>1</Position>
@@ -1055,107 +1055,117 @@
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="264" parent="234" name="image">
+    <column id="264" parent="234" name="title">
       <Position>2</Position>
-      <DataType>varchar(150)|0s</DataType>
+      <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="265" parent="234" name="contents_id">
+    <column id="265" parent="234" name="image">
       <Position>3</Position>
+      <DataType>varchar(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="266" parent="234" name="info">
+      <Position>4</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="267" parent="234" name="user_id">
+      <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="266" parent="234" name="images_idfk_1">
-      <ColNames>contents_id</ColNames>
+    <column id="268" parent="234" name="created_at">
+      <Position>6</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="269" parent="234" name="gallery_idfk_1">
+      <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="267" parent="234" name="PRIMARY">
+    <key id="270" parent="234" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="268" parent="234" name="images_idfk_1">
-      <ColNames>contents_id</ColNames>
-      <RefTableName>contents</RefTableName>
-      <RefColNames>id</RefColNames>
-      <OnUpdate>cascade</OnUpdate>
-      <OnDelete>cascade</OnDelete>
-    </foreign-key>
-    <column id="269" parent="235" name="user_id">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="270" parent="235" name="contents_id">
-      <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="271" parent="235" name="rating">
-      <Position>3</Position>
-      <DataType>enum(&apos;+&apos;, &apos;-&apos;)|0e</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <index id="272" parent="235" name="rating_idfk_2">
-      <ColNames>user_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="273" parent="235" name="rating_idfk_1">
-      <ColNames>contents_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <foreign-key id="274" parent="235" name="rating_idfk_2">
+    <foreign-key id="271" parent="234" name="gallery_idfk_1">
       <ColNames>user_id</ColNames>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <foreign-key id="275" parent="235" name="rating_idfk_1">
+    <column id="272" parent="235" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="273" parent="235" name="image">
+      <Position>2</Position>
+      <DataType>varchar(150)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="274" parent="235" name="contents_id">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="275" parent="235" name="images_idfk_1">
+      <ColNames>contents_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="276" parent="235" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="277" parent="235" name="images_idfk_1">
       <ColNames>contents_id</ColNames>
       <RefTableName>contents</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="276" parent="236" name="id">
+    <column id="278" parent="236" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="277" parent="236" name="nickname">
+    <column id="279" parent="236" name="nickname">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="278" parent="236" name="email">
+    <column id="280" parent="236" name="email">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="279" parent="236" name="password">
+    <column id="281" parent="236" name="password">
       <Position>4</Position>
       <DataType>varchar(225)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="280" parent="236" name="avatar">
+    <column id="282" parent="236" name="avatar">
       <Position>5</Position>
       <DataType>varchar(225)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="281" parent="236" name="info">
+    <column id="283" parent="236" name="info">
       <Position>6</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="282" parent="236" name="role">
+    <column id="284" parent="236" name="role">
       <Position>7</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;user&apos;</DefaultExpression>
     </column>
-    <key id="283" parent="236" name="PRIMARY">
+    <key id="285" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
