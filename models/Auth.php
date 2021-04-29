@@ -49,4 +49,18 @@ class Auth
         ]);
         return $stmt->fetch();
     }
+
+    public function updateUser($data){
+        $stmt=$this->pdo->prepare("SELECT users SET nickname=:nickname,email=:email,password=:password,avatar=:avatar,info=:info, role=:role
+                                            WHERE id=:id");
+        $stmt->execute([
+            'nickname'=>$data['nickname'],
+            'email'=>$data['email'],
+            'password'=>$data['password'],
+            'avatar'=>$data['avatar'],
+            'info'=>$data['info'],
+            'role'=>$data['role'],
+            'id'=>$data['id']
+        ]);
+    }
 }
