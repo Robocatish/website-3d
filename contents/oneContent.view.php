@@ -7,6 +7,7 @@ include $_SERVER['DOCUMENT_ROOT']. '/templates/navDefault.php';?>
     <div> <?= $content->text ?> </div>
 </div>
 <br>
+<div style="display: <?=$content->user_id==$user->id || $user->role=='admin'?'inline':'none'?>">
     <a href="deleteContent.php?id=<?=$content->id?>" class="deleteBtn"
     onclick="return confirm('вы действительно хотите удалить материал?');">
         удалить материал
@@ -14,6 +15,7 @@ include $_SERVER['DOCUMENT_ROOT']. '/templates/navDefault.php';?>
     <a href="editContent.php?id=<?=$content->id?>" class="editBtn">
         изменить статью
     </a>
+</div>
     <?php else: ?>
         <div>К сожелению здесь ничего нет :(</div>
     <?php endif;?>

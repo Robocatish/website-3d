@@ -102,4 +102,11 @@ class Content
         ]);
         return $stmt->fetchAll();
     }
+    public function getOneImageFromContent($contents_id){
+        $stmt=$this->pdo->prepare("SELECT * FROM images WHERE contents_id=:contents_id");
+        $stmt->execute([
+            'contents_id'=>$contents_id
+        ]);
+        return $stmt->fetch();
+    }
 }

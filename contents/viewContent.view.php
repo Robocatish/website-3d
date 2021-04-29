@@ -5,6 +5,7 @@ include $_SERVER['DOCUMENT_ROOT']. "/templates/navDefault.php";?>
 <div>
     <table class="adminTable">
         <tr>
+            <th>картинка</th>
             <th>название контента</th>
             <th>текст</th>
             <th>создатель</th>
@@ -13,6 +14,7 @@ include $_SERVER['DOCUMENT_ROOT']. "/templates/navDefault.php";?>
 
         <?php foreach ($contents as $content):?>
         <tr>
+            <td><img src="../img/<?=($Image=$dataContent->getOneImageFromContent($content->id))->image?>" alt=""></td>
             <td><a href="/contents/oneContent.php?id=<?=$content->id?>"><?=$content->title?></a></td>
             <td><?=$content->text?></td>
             <td><?=$content->nickname?></td>

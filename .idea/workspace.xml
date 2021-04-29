@@ -2,34 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7734d814-f1f7-440d-8647-3a677be22c66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/insertGallery/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/insertGallery/insertGallery.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/insertGallery/insertGallery.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contents/deleteContent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contents/editContent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contents/editContent.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contents/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contents/oneContent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contents/oneContent.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contents/updateContent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contents/viewContent.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Comments.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Gallery.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/navigationPanel/about/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/navigationPanel/about/index.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/navigationPanel/gallery/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/navigationPanel/gallery/index.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6bcb4973-46de-491d-84d1-3145ec082c8a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6bcb4973-46de-491d-84d1-3145ec082c8a.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/bookfl.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/insertDevEnv/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/insertDevEnv/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contents/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/contents/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contents/oneContent.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/contents/oneContent.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contents/viewContent.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/contents/viewContent.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/db/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/db/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Comments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Content.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigationPanel/gallery/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/navigationPanel/gallery/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigationPanel/gallery/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/navigationPanel/gallery/index.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/navDefault.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navDefault.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/contents" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -71,9 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\model-website\resources" />
       <recent name="C:\OpenServer\domains\model-website\contents" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\model-website\resources" />
       <recent name="C:\OpenServer\domains\model-website\navigationPanel" />
     </key>
   </component>
@@ -89,7 +75,9 @@
       <workItem from="1619408940672" duration="17110000" />
       <workItem from="1619494463001" duration="18624000" />
       <workItem from="1619517635969" duration="162000" />
-      <workItem from="1619580521650" duration="15936000" />
+      <workItem from="1619580521650" duration="16189000" />
+      <workItem from="1619667373985" duration="2577000" />
+      <workItem from="1619670958808" duration="11455000" />
     </task>
     <servers />
   </component>
